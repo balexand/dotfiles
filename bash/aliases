@@ -1,0 +1,11 @@
+alias delete_all_local_branches="git branch --merged | grep -v \* | xargs git branch -D"
+alias curlhead="curl -v $1 > /dev/null"
+
+alias c="rails c"
+alias s="rails s"
+
+alias f="bundle exec foreman start"
+alias g="bundle exec guard"
+alias r="bundle exec rspec"
+
+alias serve="ruby -run -e httpd . -p 9090"
